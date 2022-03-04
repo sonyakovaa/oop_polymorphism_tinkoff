@@ -26,7 +26,7 @@ public class Reader {
             bookEvaluation -= rnd.nextInt(bookEvaluation);
         }
         else {
-            bookEvaluation += book.getSerialNum();
+            bookEvaluation -= book.getSerialNum();
         }
 
         System.out.println("Title of the book - " + book.getName() + ", reader's evaluation of the book - " + bookEvaluation);
