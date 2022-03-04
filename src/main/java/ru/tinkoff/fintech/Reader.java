@@ -13,7 +13,7 @@ public class Reader {
         System.out.println(book);
     }
 
-    void rateBook(Book book) {
+    public void rateBook(Book book) {
         int bookEvaluation = book.getName().length() + book.getAuthor().length();
         Random rnd = new Random();
         if (book.getPageCount()== 0) {
