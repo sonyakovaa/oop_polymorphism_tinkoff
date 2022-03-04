@@ -14,19 +14,20 @@ public class Reader {
     }
 
     public void rateBook(Book book) {
-        int bookEvaluation = book.getName().length() + book.getAuthor().length();
+        int bookEvaluation = book.getName().length() + book.getAuthor().length(); // 11 + 3 = 14
         Random rnd = new Random();
-        if (book.getPageCount()== 0) {
-            bookEvaluation -= rnd.nextInt(bookEvaluation);
-        } else {
-            bookEvaluation += book.getPageCount();
-        }
 
         if (book.getSerialNum() == 0) {
             bookEvaluation -= rnd.nextInt(bookEvaluation);
         }
         else {
             bookEvaluation -= book.getSerialNum();
+        }
+
+        if (book.getPageCount()== 0) {
+            bookEvaluation -= rnd.nextInt(bookEvaluation);
+        } else {
+            bookEvaluation += book.getPageCount();
         }
 
         System.out.println("Title of the book - " + book.getName() + ", reader's evaluation of the book - " + bookEvaluation);
