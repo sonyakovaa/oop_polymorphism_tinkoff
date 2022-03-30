@@ -6,19 +6,19 @@ public class Book {
     private int serialNum = 0;
     private int pageCount = 0;
 
-    Book(String name, String author) {
+    public Book(String name, String author) {
         this.name = name;
         this.author = author;
     }
 
-    Book(String name, String author, int serialNum, int pageCount) {
+    public Book(String name, String author, int serialNum, int pageCount) {
         this.name = name;
         this.author = author;
         this.serialNum = serialNum;
         this.pageCount = pageCount;
     }
 
-    Book(String name, String author, int serialNum) {
+    public Book(String name, String author, int serialNum) {
         this.name = name;
         this.author = author;
         this.serialNum = serialNum;
